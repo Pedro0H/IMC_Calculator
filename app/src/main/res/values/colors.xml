@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azul_personalizado">#2196F3</color>
+    <color name="cinza_escuro">#2C2C2C </color>
+    <color name="fundoV">#F1ADF2AA</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="blue_dark">#1976D2</color>
+    <color name="text_dark">#212121</color>
+    <color name="input_background">#E3F2FD</color>
+    <color name="tema">#222831</color>
+
+    <color name="verde_claro">#E8F5E9</color> <!-- Fundo claro -->
+    <color name="verde_escuro">#2E7D32</color> <!-- Títulos e textos -->
+    <color name="verde_imc">#4CAF50</color> <!-- Botão e destaques -->
+    <color name="input_background_green">#C8E6C9</color> <!-- Campo de entrada -->
+
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/verde_claro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"
+        android:gravity="center"
+        android:textColor="@color/verde_escuro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textResultado1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite sua Altura em cm:"
+        android:textSize="18sp"
+        android:textColor="@color/verde_escuro"
+        android:gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/verde_escuro"
+        app:boxBackgroundColor="@color/input_background_green"
+        app:boxStrokeColor="@color/verde_imc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editaltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura (cm)"
+            android:textColor="@color/verde_escuro"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textResultado2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu Peso em kg:"
+        android:textSize="18sp"
+        android:textColor="@color/verde_escuro"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/verde_escuro"
+        app:boxBackgroundColor="@color/input_background_green"
+        app:boxStrokeColor="@color/verde_imc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editpeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso (kg)"
+            android:textColor="@color/verde_escuro"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/verde_imc"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" />
+
+</LinearLayout>
